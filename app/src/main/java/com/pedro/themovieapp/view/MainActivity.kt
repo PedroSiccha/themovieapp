@@ -1,11 +1,11 @@
-package com.pedro.themovieapp.viewmodel
+package com.pedro.themovieapp.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.pedro.themovieapp.databinding.ActivityMainBinding
+import com.pedro.themovieapp.viewmodel.MovieViewModel
 
 class MainActivity : AppCompatActivity() {
 
