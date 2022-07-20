@@ -1,10 +1,18 @@
 package com.pedro.themovieapp.model
 
 class UserProvider {
-    val user = listOf<UserModel>(
-        UserModel(
-            username = "Admin",
-            password = "Password*123"
-        )
-    )
+
+    companion object {
+
+        fun login(userName: String, password: String): Boolean{
+            var isLogin: Boolean = false
+            if (userName == "Admin" && password == "Password123"){
+                isLogin = true
+            }
+            return isLogin
+        }
+
+    }
+
+
 }
